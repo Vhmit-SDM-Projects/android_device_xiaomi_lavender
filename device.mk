@@ -112,7 +112,7 @@ PRODUCT_PACKAGES += \
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi
 
 # Build
 PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
@@ -147,7 +147,7 @@ PRODUCT_COPY_FILES += \
 
 # ConsumerIR
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.xiaomi_sdm660
+    android.hardware.ir@1.0-service.xiaomi
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
@@ -288,7 +288,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.xiaomi_sdm660
+    android.hardware.lights-service.xiaomi
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
@@ -388,7 +388,7 @@ PRODUCT_BOOT_JARS += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim
+    libcamera_shim
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -425,7 +425,7 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.xiaomi_sdm660.qti
+    android.hardware.thermal@2.0-service.xiaomi.qti
 
 # USB
 PRODUCT_PACKAGES += \
