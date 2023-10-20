@@ -412,7 +412,7 @@ else
         disable_core_ctl
         # Enable oom_reaper for Go devices
         if [ -f /proc/sys/vm/reap_mem_on_sigkill ]; then
-            echo 1 > /proc/sys/vm/reap_mem_on_sigkill
+            echo 0 > /proc/sys/vm/reap_mem_on_sigkill
         fi
     else
 
@@ -459,7 +459,7 @@ else
 
         # Enable oom_reaper
         if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
-            echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
+            echo 0 > /sys/module/lowmemorykiller/parameters/oom_reaper
         fi
 
         # Set PPR parameters
